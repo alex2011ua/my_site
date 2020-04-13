@@ -1,53 +1,71 @@
-<?php 
-  // 24 января 1985 года
-  $birthday = mktime(0, 0, 0, 1, 24, 1985);
-  echo birthday($birthday);
+<?php
+  // Вычисляем число дней в текущем месяце
+  $dayofmonth = date('t');
+  // Счётчик для дней месяца
+  $day_count = 1;
 
-  // Количество лет, месяцев и дней, прошедших со дня рождения
-  function birthday($sec_birthday)
+  // 1. Первая неделя
+  $num = 0;
+  for($i = 0; $i < 7; $i++)
   {
-    // Сегодняшняя дата
-    $sec_now = time();
-    // Подсчитываем количество месяцев, лет
-    for($time = $sec_birthday, $month = 0; 
-        $time < $sec_now; 
-        $time = $time + date('t', $time) * 86400, $month++){
-        $rtime = $time;
-        }
-    $month = $month - 1;
-    // Количество лет
-    $year = intval($month / 12);
-    // Количество месяцев
-    $month = $month % 12;
-    // Количество дней
-    $day = intval(($sec_now - $rtime) / 86400);
-    $result = declination($year, "год", "года", "лет")." ";
-    $result .= declination($month, "месяц", "месяца", "месяцев")." ";
-    $result .= declination($day, "день", "дня", "дней")." ";
-    return $result;
+    // Вычисляем номер дня недели для числа
+    $dayofweek = date('w',
+                      mktime(0, 0, 0, date('m'), $day_count, date('Y')));
+    // Приводим к числа к формату 1 - понедельник, ..., 6 - суббота
+    $dayofweek = $dayofweek - 1;
+    if($dayofweek == -1) $dayofweek = 6;
+
+    if($dayofweek == $i)
+    {
+      // Если дни недели совпадают,
+      // заполняем массив $week
+      // числами месяца
+      $week[$num][$i] = $day_count;
+      $day_count++;
+    }
+    else
+    {
+      $week[$num][$i] = "";
+    }
   }
 
-  // Склонение числа $num
-  function declination($num, $one, $ed, $mn, $notnumber = false)
-  {  
-    // $one="статья";  
-    // $ed="статьи";  
-    // $mn="статей";  
-    if($num === "") print "";
-    if(($num == "0") or (($num >= "5") and ($num <= "20")) or preg_match("|[056789]$|",$num))
-      if(!$notnumber)
-        return "$num $mn";
-      else
-        return $mn;
-    if(preg_match("|[1]$|",$num))
-      if(!$notnumber)
-        return "$num $one";
-      else
-        return $one;
-    if(preg_match("|[234]$|",$num))
-      if(!$notnumber)
-        return "$num $ed";
-      else
-        return $ed;
+  // 2. Последующие недели месяца
+  while(true)
+  {
+    $num++;
+    for($i = 0; $i < 7; $i++)
+    {
+      $week[$num][$i] = $day_count;
+      $day_count++;
+      // Если достигли конца месяца - выходим
+      // из цикла
+      if($day_count > $dayofmonth) break;
+    }
+    // Если достигли конца месяца - выходим
+    // из цикла
+    if($day_count > $dayofmonth) break;
   }
+
+  // 3. Выводим содержимое массива $week
+  // в виде календаря
+  // Выводим таблицу
+  echo "<table border=1>";
+  for($i = 0; $i < count($week); $i++)
+  {
+    echo "<tr>";
+    for($j = 0; $j < 7; $j++)
+    {
+      if(!empty($week[$i][$j]))
+      {
+        // Если имеем дело с субботой и воскресенья
+        // подсвечиваем их
+        if($j == 5 || $j == 6) 
+             echo "<td><font color=red>".$week[$i][$j]."</font></td>";
+        else echo "<td>".$week[$i][$j]."</td>";
+      }
+      else echo "<td>&nbsp;</td>";
+    }
+    echo "</tr>";
+  } 
+  echo "</table>";
 ?>
