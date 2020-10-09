@@ -1,66 +1,194 @@
 <!DOCTYPE html>
-
+<html lang="ru">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180075682-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    <!-- Meta -->
+      gtag('config', 'UA-180075682-1');
+    </script>
+
     <meta charset="utf-8">
-   
-
-    <!-- Title -->
-    <title>!!!</title>
-
-    <!-- Templates core CSS -->
-    <link href="stylesheets/application.css" rel="stylesheet">
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+    <title>Alexey Kovalenko</title>
   </head>
-  <body class="index" id="to-top">
+  <body>
 
- 
-    <!-- Services -->
-    <section class="services-section" id="section-1">
-
+    <section class="promo dark-bg pt-2 pb-5">
       <div class="container">
+        <nav class="navbar navbar-expand-lg mb-5 navbar-dark">
+          <a href="#" class="navbar-brand logo d-flex align-items-center text-white text-decoration-none align-content-start">
+            <div class="logo-left pr-2">
+              <img src="static/ava_Alex.gif" alt="" class="rounded-circle" width="54">
+            </div>
+            <div class="logo-right ">
+              <div class="logo-title">Alexey Kovalenko</div>
+              <div class="logo-subtitle text-muted">Junior Python dev</div>
+            </div>
+          </a>
+          <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav m-auto">
+              <li class="nav-item mx-3">
+                <a href="#story" class="nav-link text-muted link-border-bottom">Моя история</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="#projects" class="nav-link text-muted link-border-bottom">Мои работы</a>
+              </li>
+              <li class="nav-item mx-3">
+                <a href="#contact" class="nav-link text-muted link-border-bottom">Сотрудичество</a>
+              </li>
+            </ul>
+            <ul class="nav ml-auto">
+              <li class="nav-item mx-3">
+                <a href="https://github.com/alex2011ua" class="nav-link text-white link-border-bottom">Github</a>
+              </li>
+              <li class="nav-item mx-3 mr-0">
+                <a href="#contact" class="nav-link text-white link-border-bottom">Написать мне</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-        <div class="row">
-
-          <div class="col-md-12 col-services">
-            <!-- Logo -->
-            <figure class="text-center">
-              <a href="./2.html">
-                <img class="img-responsive" src="images/ba_logo.png" alt="">
-              </a>
-            </figure> <!-- /.text-center -->
-
-  <!-- Title -->
-  
-  <form action="/signup" method="POST">
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label" for="exampleCheck1">Check me out</label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
-</form>
-
-
-          </div> <!-- /.col-md-12 -->
-          
-        </div> <!-- /.row -->
         
-      </div> <!-- /.container -->
-      
-    </section> <!-- /.services-section -->
+        <div class="row py-0 py-sm-5">
+          <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
+            <h1 class="h1 font-weight-bold font-color-green mb-4">Привет! Меня зовут Алексей</h1>
+            <p class="promo-text pb-3">Я&nbsp;&mdash; Junior developer, изучаю Python, Django и&nbsp;Flask, хочу научиться хорошо делать бекенд, найти работу и&nbsp;новых друзей</p>
+            <a href="#contact" class="btn btn-success btn-green">Написать мне</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="story container py-5 " id="story">
+      <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 text-center">Моя история</h2>
+      <div class="row">
+        <div class="col-12 col-sm-8 offset-sm-2 px-2 pb-5">
+          <p class="font-weight-bold pb-4">Связан с IT всю жизнь, занимался обслуживанием и настройкой компьютерной и офисной техники.
+            В начале 2020 года решил попробовать себя в&nbsp;разработке программного обеспечения.
+            Начал изучение с прохождения таких курсов:</p>
+            <p class="pb-3">Stepik:</p>
+            <ul>
+              <li><a href=" https://stepik.org/cert/272081 " class="story-link" target="_blank">Программирование на Python</a></li>
+              <li><a href=" https://stepik.org/cert/272081 " class="story-link" target="_blank">"Поколение Python": курс для начинающих</a></li>
+              <li><a href=" https://stepik.org/cert/272081 " class="story-link" target="_blank">Python: основы и применение</a></li>
+              <li><a href=" https://stepik.org/cert/272081 " class="story-link" target="_blank">Web-технологии</a></li>
+               <li><a href=" https://stepik.org/cert/272081 " class="story-link" target="_blank">Flask с нуля на практике</a></li>
+            </ul>
+          <p class="pb-3">Cursera:</p>
+          <ul>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/3YDGDQ2EK9MG" class="story-link" target="_blank">Погружение в Python</a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/7NAC6LKHLUSJ" class="story-link" target="_blank">ООП и паттерны проектирования в Python</a></li>
+              <li><a href="https://www.coursera.org/account/accomplishments/verify/ZRCCHHE93MVE" class="story-link" target="_blank">Создание Web-сервисов на Python</a></li>
+
+            </ul>
+          <p class="pb-3">Во время изучения использовал Git  для синхронизации кода на домашнем и рабочем компьютере.
+            Планирую подкрепить полученные теоретические знания практикой.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects dark-bg pt-3 pt-sm-5 pb-3" id="projects">
+      <div class="container">
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 text-center">Мои работы</h2>
+        <div class="row">
+          <div class="col-12 col-sm-6 mb-5">
+            <img src="static/django_scr.gif" alt="" class="w-100 pb-4">
+            <p class="mb-3">Django. Контроль въезда на територию. Несколько постов пропуска. Деплой на Heroku тестовой версии. Подключена  ClearDB MySQL и настроена аутентификация пользователей.  </p>
+            <p>
+              <a href="https://django-avto.herokuapp.com/" target="_blank" class="link link-green mr-4">Смотреть проект</a>
+              <a href="https://github.com/alex2011ua/heroku" target="_blank" class="link">Исходный код</a>
+            </p>
+          </div>
+          <div class="col-12 col-sm-6 mb-5">
+            <img src="static/flask.gif" alt="" class="w-100 pb-4">
+            <p class="mb-3">Flask. Поисковик по&nbsp;турам. 3&nbsp;экрана: главная, направление, тур.</p>
+            <p>
+              <a href="flask" target="_blank" class="link link-green mr-4">Смотреть проект</a>
+              <a href="https://github.com/alex2011ua/flask" target="_blank" class="link">Исходный код</a>
+            </p>
+          </div>
 
 
+        </div>
+      </div>
+    </section>
 
+    <section class="goals container pt-3 pt-sm-5 pb-3">
+      <h2 class="h2 font-weight-bold my-4 text-center">Мои цели</h2>
+      <div class="row">
+        <div class="col-12  pb-1">
+          <p class="pb-2">Мои ближайшие цели: Сделать контроллер умного дома на основе Raspbery  и Arduino. Освоить "слепой" метод набора, продолжать изучение и совершенствование английского языка. </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="goals container mb-5 pb-sm-5 pb-0" id="contact">
+      <h2 class="h2 font-weight-bold my-4 text-center">Сотрудничество</h2>
+      <div class="row">
+        <div class="col-12 pb-1">
+          <p class="pb-1 mb-1">Мне было бы интересно:</p>
+          <ul class="list-unstyled mb-4">
+            <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+              <span>Найти стажировку в большой компании с наставником</span>
+            </li>
+            <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+              <span>Поучаствовать в хакатоне как backend-разработчик</span>
+            </li>
+            <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+              <span>Принять участие в общественно-полезном проекте</span>
+            </li>
+            <li class="d-flex align-items-center align-content-start m-2" style="line-height: 24px;">
+              <span class="pr-1">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/><path d="M0 0h24v24H0z" fill="none"/></svg>
+              </span>
+              <span>Попробовать разработать бэкенд мобильного приложения</span>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col-4 col-sm-6">
+              <p class="d-flex justify-content-between flex-wrap">
+                <a href="https://www.facebook.com/profile.php?id=100002057601437" class="btn btn-primary mb-3" target="_blank">Написать в FB</a>
+                <a href="https://teleg.run/Alex2011ua" class="btn btn-info mb-3" target="_blank">Написать в Telegram</a>
+                <a href="mailto:alex2011ua@gmail.com" class="btn btn btn-dark mb-3" target="_blank">Написать на почту</a>
+              </p>
+            </div>
+            <div class="col-8 col-sm-6">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer dark-bg">
+      <nav class="container navbar ">
+        <ul class="nav m-auto py-2">
+          <li class="nav-item mx-3">
+            Благодарю за проссмотр! Отличного Вам настроения!
+          </li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   </body>
 </html>
