@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-180075682-1"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,6 +17,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
     <title>Alexey Kovalenko</title>
+    <link rel="icon" type="static/png" href="static/favico.ico" />
+      <meta property="og:title" content="Коваленко Алексей, Python dev.">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="static/og.gif">
   </head>
   <body>
 
@@ -61,7 +66,7 @@
         <div class="row py-0 py-sm-5">
           <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
             <h1 class="h1 font-weight-bold font-color-green mb-4">Привет! Меня зовут Алексей</h1>
-            <p class="promo-text pb-3">Я&nbsp;&mdash; Junior developer, изучаю Python, Django и&nbsp;Flask, хочу научиться хорошо делать бекенд, найти работу и&nbsp;новых друзей</p>
+            <p class="promo-text pb-3">Я&nbsp;&mdash; Junior developer, изучаю Python, Django и&nbsp;Flask, хочу научиться хорошо делать back-end, найти работу и&nbsp;новых друзей</p>
             <a href="#contact" class="btn btn-success btn-green">Написать мне</a>
           </div>
         </div>
@@ -100,6 +105,36 @@
       <div class="container">
         <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 text-center">Мои работы</h2>
         <div class="row">
+          <div class="col-12 col-sm-12 mb-5">
+            <p>Живу в частном доме. В свободное время занимаюсь реализацией и постоянной модернизацией личного проекта "Умный дом".</p>
+            <img src="static/smart_home.gif" alt="" class="w-100 pb-4">
+
+            <p class="mb-3"><img src="static/smart_home2.gif" alt="" class="leftimg">
+              Реализован проект умного дома на Django.<br>
+              Запущен сервер на мини компьютере Raspberry на котором установлены и настроены Nginx, Gunicorn.<br>
+              К серверу  подключен контроллер Arduino для работы с датчиками.<br>
+              При помощи Celery настроен регулярный опрос датчиков и выполнение длительный операций.<br>
+              Подключен телеграмм-бот для информирования хозяина о происходящем.<br>
+              Информация сохраняется в SQLite<br>
+              Реализованный функционал:
+
+            <ol>
+              <li>По API раз в день запрашивается прогноз погоды для автоматического полива.</li>
+              <li>Летом будет анализироваться погода и включаться полив в нужное время.</li>
+              <li>Зимой реализовано удаленное управление уличной иллюминацией.</li>
+              <li>Подключены и реализована запись в БД и вывод на сайт значений различных датчиков, а именно: температура, открытия двери, качества воздуха, и др.</li>
+              <li>Подключены и реализована запись в БД и вывод на сайт значений различных датчиков, а именно: температура, открытия двери, качества воздуха, и др.</li>
+              <li>Реализовано удаленное управление различными устройствами.</li>
+              <li>Идентификация и аутентификация пользователя встроенными средствами Django.</li>
+              <li>Подключена админка.</li>
+            </ol>
+            </p>
+            <p>
+
+              <a href="https://github.com/alex2011ua/smart_home" target="_blank" class="link">Исходный код</a>
+        </div>
+
+        <div class="row">
           <div class="col-12 col-sm-6 mb-5">
             <img src="static/django_scr.gif" alt="" class="w-100 pb-4">
             <p class="mb-3">Django. Контроль въезда на територию. Несколько постов пропуска. Деплой на Heroku тестовой версии. Подключена  ClearDB MySQL и настроена аутентификация пользователей.  </p>
@@ -112,11 +147,24 @@
             <img src="static/flask.gif" alt="" class="w-100 pb-4">
             <p class="mb-3">Flask. Поисковик по&nbsp;турам. 3&nbsp;экрана: главная, направление, тур.</p>
             <p>
-              <a href="flask" target="_blank" class="link link-green mr-4">Смотреть проект</a>
-              <a href="https://github.com/alex2011ua/flask" target="_blank" class="link">Исходный код</a>
+              <a href="tours" target="_blank" class="link link-green mr-4">Смотреть проект</a>
+              <a href="https://github.com/alex2011ua/search_tours" target="_blank" class="link">Исходный код</a>
             </p>
           </div>
 
+
+          <div class="col-12 col-sm-6 mb-5">
+            <img src="static/restoran.gif" alt="" class="w-100 pb-4">
+            <p class="mb-3">Flask. Сервис доставки еды дронами. MySQL, аутентификация пользователей, админка, личный кабинет.</p>
+            <p>
+              <a href="restoran" target="_blank" class="link link-green mr-4">Смотреть проект</a>
+              <a href="https://github.com/alex2011ua/flask_restoran" target="_blank" class="link">Исходный код</a>
+            </p>
+          </div>
+
+
+            </p>
+          </div>
 
         </div>
       </div>
