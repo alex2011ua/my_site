@@ -16,6 +16,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
     <title>Alexey Kovalenko</title>
     <link rel="icon" type="static/png" href="static/favico.ico" />
       <meta property="og:title" content="Коваленко Алексей, Python dev.">
@@ -65,7 +69,7 @@
         
         <div class="row py-0 py-sm-5">
           <div class="col-12 col-lg-8 offset-lg-2 mb-0 mb-sm-5 py-5">
-            <h1 class="h1 font-weight-bold font-color-green mb-4">Привет! Меня зовут Алексей</h1>
+            <h1 class="h1 font-weight-bold font-color-green mb-4 my-h1">Привет! Звать меня - Алексей</h1>
             <p class="promo-text pb-3">Я&nbsp;&mdash; Junior developer, изучаю Python, Django и&nbsp;Flask, хочу научиться хорошо делать back-end, найти работу и&nbsp;новых друзей</p>
             <a href="#contact" class="btn btn-success btn-green">Написать мне</a>
           </div>
@@ -74,7 +78,7 @@
     </section>
 
     <section class="story container py-5 " id="story">
-      <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 text-center">Моя история</h2>
+      <h2 class="h1 font-weight-bold mt-4 mb-3 mb-sm-5 pb-3 text-center my-h1">Моя история</h2>
       <div class="row">
         <div class="col-12 col-sm-8 offset-sm-2 px-2 pb-5">
           <p class="font-weight-bold pb-4">Связан с IT всю жизнь, занимался обслуживанием и настройкой компьютерной и офисной техники.
@@ -96,7 +100,7 @@
               <li><a href="https://www.coursera.org/account/accomplishments/verify/NXQVEPXLYQ5R" class="story-link" target="_blank">Основы HTML и CSS</a></li>
               <li><a href="https://www.coursera.org/account/accomplishments/verify/TGYE3JY44DLE" class="story-link" target="_blank">JavaScript, часть 1: основы и функции</a></li>
           </ul>
-          <p class="pb-3">Во время изучения использовал Git  для синхронизации кода на домашнем и рабочем компьютере.
+          <p class="pb-3">Во время изучения использовал <span class="names"> Git</span>  для синхронизации кода на домашнем и рабочем компьютере.
             Планирую подкрепить полученные теоретические знания практикой.</p>
         </div>
       </div>
@@ -104,32 +108,32 @@
 
     <section class="projects dark-bg pt-3 pt-sm-5 pb-3" id="projects">
       <div class="container">
-        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 text-center">Мои работы</h2>
+        <h2 class="h1 font-weight-bold text-center mt-4 mt-sm-5 mb-0 mb-sm-4 pb-5 text-center my-h1" >Мои работы</h2>
         <div class="row">
           <div class="col-12 col-sm-12 mb-5">
             <p>Живу в частном доме. В свободное время занимаюсь реализацией и постоянной модернизацией личного проекта "Умный дом".</p>
             <img src="static/smart_home.gif" alt="" class="w-100 pb-4">
 
-            <p class="mb-3"><img src="static/smart_home2.gif" alt="" class="leftimg">
-              Реализован проект умного дома на Django.<br>
-              Запущен сервер на мини компьютере Raspberry на котором установлены и настроены Nginx, Gunicorn.<br>
-              К серверу  подключен контроллер Arduino для работы с датчиками.<br>
-              При помощи Celery настроен регулярный опрос датчиков и выполнение длительный операций.<br>
-              Подключен телеграмм и Вайбер боты для информирования хозяина о происходящем.<br>
-              Информация сохраняется в SQLite<br>
-              Реализованный функционал:
-
-            <ol>
-              <li>По API раз в день запрашивается прогноз погоды для автоматического полива.</li>
-              <li>Летом будет анализироваться погода и включаться полив в нужное время.</li>
-              <li>Зимой реализовано удаленное управление уличной иллюминацией.</li>
-              <li>Подключены и реализована запись в БД и вывод на сайт значений различных датчиков, а именно: температура, открытия двери, качества воздуха, и др.</li>
-              <li>Подключены и реализована запись в БД и вывод на сайт значений различных датчиков, а именно: температура, открытия двери, качества воздуха, и др.</li>
-              <li>Реализовано удаленное управление различными устройствами.</li>
-              <li>Идентификация и аутентификация пользователя встроенными средствами Django.</li>
-              <li>Подключена админка.</li>
-            </ol>
+            <img src="static/smart_home2.gif" alt="" class="leftimg">
+            <p class="mb-3">
+              Реализовал проект умного дома на <span class="names"> Django</span>.<br>
+              Запущен сервер на мини компьютере <span class="names"> Raspberry</span> на котором установил и настроил <span class="names"> Nginx</span>, <span class="names"> Gunicorn</span>.<br>
+              К серверу  подключен контроллер <span class="names"> Arduino</span> для работы с датчиками.<br>
+              При помощи <span class="names"> Celery</span> настроил регулярный опрос датчиков и выполнение длительный операций.<br>
+              Информация сохраняется в <span class="names"> SQLite</span><br>
             </p>
+            <div class="center">Реализованный функционал: </div>
+
+              <ul>
+                <li>По API раз в день запрашивается прогноз погоды для автоматического полива.</li>
+                <li>Зимой реализовано удаленное управление уличной иллюминацией.</li>
+                <li>Подключены и реализована запись в БД и вывод на сайт значений различных датчиков, а именно: температура, открытия двери, качества воздуха, и др.</li>
+                <li>Реализовано удаленное управление различными устройствами.</li>
+                <li>Подключил Телеграмм и Вайбер боты для получения важной информации.</li>
+                <li>Идентификация и аутентификация пользователя встроенными средствами <span class="names"> Django</span>.</li>
+                <li>Подключена админка.</li>
+              </ul>
+
             <p>
               <a href="https://github.com/alex2011ua/smart_home" target="_blank" class="link">Исходный код</a>
         </div>
@@ -137,7 +141,7 @@
         <div class="row">
           <div class="col-12 col-sm-6 mb-5">
             <img src="static/django_scr.gif" alt="" class="w-100 pb-4">
-            <p class="mb-3">Django. Контроль въезда на територию. Несколько постов пропуска. Деплой на Heroku тестовой версии. Подключена  ClearDB MySQL и настроена аутентификация пользователей.  </p>
+            <p class="mb-3">Django. Контроль въезда на територию. Несколько постов пропуска. Деплой на Heroku тестовой версии. Подключена  <span class="names"> ClearDB MySQL</span> и настроена аутентификация пользователей.  </p>
             <p>
               <a href="https://django-avto.herokuapp.com/" target="_blank" class="link link-green mr-4">Смотреть проект</a>
               <a href="https://github.com/alex2011ua/heroku" target="_blank" class="link">Исходный код</a>
@@ -145,7 +149,7 @@
           </div>
           <div class="col-12 col-sm-6 mb-5">
             <img src="static/flask.gif" alt="" class="w-100 pb-4">
-            <p class="mb-3">Flask. Поисковик по&nbsp;турам. 3&nbsp;экрана: главная, направление, тур.</p>
+            <p class="mb-3"><span class="names"> Flask</span>. Поисковик по&nbsp;турам. 3&nbsp;экрана: главная, направление, тур.</p>
             <p>
               <a href="tours" target="_blank" class="link link-green mr-4">Смотреть проект</a>
               <a href="https://github.com/alex2011ua/search_tours" target="_blank" class="link">Исходный код</a>
@@ -155,7 +159,7 @@
 
           <div class="col-12 col-sm-6 mb-5">
             <img src="static/restoran.gif" alt="" class="w-100 pb-4">
-            <p class="mb-3">Flask. Сервис доставки еды дронами. MySQL, аутентификация пользователей, админка, личный кабинет.</p>
+            <p class="mb-3"><span class="names"> Flask</span>. Сервис доставки еды дронами. <span class="names"> MySQL</span>, аутентификация пользователей, админка, личный кабинет.</p>
             <p>
               <a href="restoran" target="_blank" class="link link-green mr-4">Смотреть проект</a>
               <a href="https://github.com/alex2011ua/flask_restoran" target="_blank" class="link">Исходный код</a>
@@ -171,16 +175,16 @@
     </section>
 
     <section class="goals container pt-3 pt-sm-5 pb-3">
-      <h2 class="h2 font-weight-bold my-4 text-center">Мои цели</h2>
+      <h2 class="h2 font-weight-bold my-4 text-center my-h1">Мои цели</h2>
       <div class="row">
         <div class="col-12  pb-1">
-          <p class="pb-2">Мои ближайшие цели: Сделать контроллер умного дома на основе Raspbery  и Arduino. Освоить "слепой" метод набора, продолжать изучение и совершенствование английского языка. </p>
+          <p class="pb-2">Мои ближайшие цели: Сделать контроллер умного дома на основе <span class="names"> Raspbery</span>  и <span class="names"> Arduino</span>. Освоить "слепой" метод набора, продолжать изучение и совершенствование английского языка. </p>
         </div>
       </div>
     </section>
 
     <section class="goals container mb-5 pb-sm-5 pb-0" id="contact">
-      <h2 class="h2 font-weight-bold my-4 text-center">Сотрудничество</h2>
+      <h2 class="h2 font-weight-bold my-4 text-center my-h1 ">Сотрудничество</h2>
       <div class="row">
         <div class="col-12 pb-1">
           <p class="pb-1 mb-1">Мне было бы интересно:</p>
